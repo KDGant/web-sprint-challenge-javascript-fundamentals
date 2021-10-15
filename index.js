@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 /*Functions always look outside the function for context, which is why it's able to reach outward and */
-
+/* functions naturally look for context when a variable is invoked within the function. So if a variable is invoked within a function, yet the variable has not been declared within the function, it will look outwardly above to find the declared variable.*/
 
 
 
@@ -93,7 +93,7 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
+  function USApop(){
     const populationTotal = zooAnimals.reduce((acc, curr) => {
       return acc + curr.population;
     }, 0);
